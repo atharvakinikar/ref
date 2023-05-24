@@ -1,0 +1,15 @@
+.box{
+    margin-right: 400px;
+    margin-left: 400px;
+}
+
+.heading{
+    color: red;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+button{
+    width: 150px;
+    height: 40px;
+}

@@ -1,0 +1,27 @@
+Steps :
+
+1) Vbox me kali Linux and Ubuntu ko import karlo
+2) check if you have network tab in preferences as mentioned in lab manual
+
+Agar vo hai to then follow the lab manual steps
+
+Agar vo nahi hai to tools me jao...tools me NAT network ka tab hai ...usme add karo and then follow lab manual steps..
+
+3) sck Test_file.txt <host>@ip isme error aayega mostly sabko...
+
+If error is
+ssh: connect to host 10.0.2.4 port 22: connection refused
+scp: connection closed
+
+Then probably the error is because of the ssh service is disabled in either of the OS...
+
+So check on both terminals that if it's running or not by the command :
+
+sudo systemctl status ssh
+
+If on either of the PC it states that ssh.service could not be found then u need to install ssh server by the following command:
+
+sudo apt install openssh-server
+
+In my case ...Ubuntu me hua ye sab...
+After these command Linux me vo file transfer ki command firse likho...and it will probably work 🙃

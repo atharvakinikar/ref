@@ -1,0 +1,23 @@
+.col{
+    background-color:cornsilk;
+    padding: 16px;
+    margin: 15px;
+    
+}
+
+.cont{
+    margin-left: 2%;
+}
+
+img{
+    width: 100%;
+}
+
+#hello{
+    text-decoration: line-through;
+    font-style: italic;
+}
+.pg{
+    margin-left: 5%;
+}
+

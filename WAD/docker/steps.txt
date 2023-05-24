@@ -1,0 +1,7 @@
+1) install docker from https://docs.docker.com/engine/install/ubuntu/
+   follow the Install using the apt repository heading.
+   here's the link to lab manual for ref :- https://drive.google.com/file/d/1u8V7qgyKZ1Cj1RRn_3yGsm6am9nRsqJ4/view?usp=sharing
+
+2) type the following command in terminal to start the server :- docker-compose up
+
+3) check on http://localhost:8080 to see the content

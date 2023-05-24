@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content=
+"width=device-width, initial-scale=1">
+    <title>table demo</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+  
+<body>
+    <center>
+        <div data-role="page">
+            <h1 style="color:#6060a3;">
+                Company Website
+            </h1>
+            <h3>Company Information Table</h3>
+            <div data-role="header" id="GFG">
+                <div role="main" class="ui-content">
+                    <table data-role="table">
+                        <thead>
+                            <tr>
+                                <th>Company</th>
+                                <th>Department</th>
+                                <th>Domain</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Lorem, ipsum.</td>
+                                <td>Computer Science</td>
+                                <td><a href="https://pict.edu/"
+                                        data-rel="external">
+                                        https://pict.edu/
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <input type="button" id="Button" 
+                   value="Value of the classes option">
+            <div id="log"></div>
+            <div class="content">
+            <center>
+                <div class="ui-grid-d ui-responsive">
+                    <img src="https://math-media.byjusfutureschool.com/bfs-math/2022/07/04185630/Asset-2-6-300x300.png" class="ui-block-a" alt="Img1" width="240" height="200">
+                    <img src="https://math-media.byjusfutureschool.com/bfs-math/2022/07/04185630/Asset-2-6-300x300.png" class="ui-block-b" alt="Img2" width="240" height="200">
+                    <img src="https://math-media.byjusfutureschool.com/bfs-math/2022/07/04185630/Asset-2-6-300x300.png" class="ui-block-c" alt="Img1" width="240" height="200">
+                    <img src="https://math-media.byjusfutureschool.com/bfs-math/2022/07/04185630/Asset-2-6-300x300.png" class="ui-block-d" alt="Img1" width="240" height="200">
+                    <img src="https://math-media.byjusfutureschool.com/bfs-math/2022/07/04185630/Asset-2-6-300x300.png" class="ui-block-e" alt="Img1" width="240" height="200">
+                </div>
+                <br>
+                <div class="ui-grid-d ui-responsive">
+                    <img src="https://math-media.byjusfutureschool.com/bfs-math/2022/07/04185630/Asset-2-6-300x300.png" class="ui-block-a" alt="Img1" width="240" height="200">
+                    <img src="https://math-media.byjusfutureschool.com/bfs-math/2022/07/04185630/Asset-2-6-300x300.png" class="ui-block-b" alt="Img2" width="240" height="200">
+                    <img src="https://math-media.byjusfutureschool.com/bfs-math/2022/07/04185630/Asset-2-6-300x300.png" class="ui-block-c" alt="Img1" width="240" height="200">
+                    <img src="https://math-media.byjusfutureschool.com/bfs-math/2022/07/04185630/Asset-2-6-300x300.png" class="ui-block-d" alt="Img1" width="240" height="200">
+                    <img src="https://math-media.byjusfutureschool.com/bfs-math/2022/07/04185630/Asset-2-6-300x300.png" class="ui-block-e" alt="Img1" width="240" height="200">
+                </div>
+            </center>
+        </div>
+    </center>
+    <script>
+        $(document).ready(function () {
+            $("#GFG").table({
+                classes: {
+                    "classes.Name": "GeeksforGeeks"
+                }
+            });
+            $("#GFG").table("option", "classes.Name", "GeeksforGeeks");
+            $("#Button").on('click', function () {
+                var a = $("#GFG").table("option", "classes.Name");
+                $("#log").html(a);
+            });
+        });
+    </script>
+</body>
+  
+</html>

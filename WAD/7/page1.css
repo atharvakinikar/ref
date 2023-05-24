@@ -1,0 +1,13 @@
+.container-bg {
+    background: #e0e0e0;
+    border-radius: 5px;
+}
+
+hr {
+   margin-left: 20%;
+   margin-right: 20%; 
+}
+
+.inline-container b, .inline-container p{
+    display: inline; float: left; padding-right: 2rem;
+}

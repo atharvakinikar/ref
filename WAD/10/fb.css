@@ -1,0 +1,11 @@
+.header{
+    background-color: rgb(31, 31, 81);
+}
+
+.fb-body{
+    background-image: linear-gradient(rgb(230, 230, 230), rgb(192, 192, 192));
+}
+
+.width-full{
+    border-radius: 6px;
+}
